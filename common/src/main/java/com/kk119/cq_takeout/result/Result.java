@@ -11,13 +11,13 @@ public class Result<T> implements Serializable {
     private T data;
 
     public static <T> Result<T> success() {
-        Result<T> result = new Result<T>();
+        Result<T> result = new Result<>();
         result.setCode(1);
         return result;
     }
 
     public static <T> Result<T> success(T object) {
-        Result<T> result = new Result<T>();
+        Result<T> result = new Result<>();
         result.setData(object);
         result.setCode(1);
         return result;

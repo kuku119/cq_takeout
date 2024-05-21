@@ -37,13 +37,13 @@ public class AliOssUtil {
             ossClient.putObject(bucketName, objectName, new ByteArrayInputStream(bytes));
         } catch (OSSException oe) {
             log.error("Caught an OSSException, which means your request made it to OSS, but was rejected with an error response for some reason.");
-            log.error("Error Message: {}", oe.getErrorMessage());
+            log.error("OSSException Message: {}", oe.getErrorMessage());
             log.error("Error Code: {}", oe.getErrorCode());
             log.error("Request ID: {}", oe.getRequestId());
             log.error("Host ID: {}", oe.getHostId());
         } catch (ClientException ce) {
             log.error("Caught an ClientException, which means the client encountered a serious internal problem while trying to communicate with OSS, such as not being able to access the network.");
-            log.error("Error Message: {}", ce.getErrorMessage());
+            log.error("ClientException Message: {}", ce.getErrorMessage());
         } finally {
             if (ossClient != null) {
                 ossClient.shutdown();
