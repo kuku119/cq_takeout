@@ -10,14 +10,14 @@ public interface CategoryService {
     /**
      * 添加分类
      *
-     * @param categoryDTO
+     * @param categoryDTO categoryDTO
      */
     void save(CategoryDTO categoryDTO);
 
     /**
      * 分页查询
      *
-     * @param categoryPageQueryDTO
+     * @param categoryPageQueryDTO categoryPageQueryDTO
      * @return {@link PageResult }
      */
     PageResult pageQuery(CategoryPageQueryDTO categoryPageQueryDTO);
@@ -25,22 +25,22 @@ public interface CategoryService {
     /**
      * 按 id 删除分类
      *
-     * @param id
+     * @param id id
      */
     void deleteById(Long id);
 
     /**
      * 修改分类
      *
-     * @param categoryDTO
+     * @param categoryDTO categoryDTO
      */
     void update(CategoryDTO categoryDTO);
 
     /**
      * 启用或禁用分类
      *
-     * @param status
-     * @param id
+     * @param status status
+     * @param id id
      */
     void startOrStop(Integer status, Long id);
 

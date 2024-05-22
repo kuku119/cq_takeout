@@ -12,7 +12,7 @@ public interface DishService {
     /**
      * 新增菜品和口味数据
      *
-     * @param dishDTO
+     * @param dishDTO dishDTO
      */
     void saveWithFlavor(DishDTO dishDTO);
 
@@ -27,7 +27,7 @@ public interface DishService {
     /**
      * 条件查询菜品和口味
      *
-     * @param dish
+     * @param dish dish
      * @return {@link List }<{@link DishVO }>
      */
     List<DishVO> listWithFlavor(Dish dish);

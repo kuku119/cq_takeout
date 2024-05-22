@@ -9,7 +9,7 @@ public interface EmployeeService {
     /**
      * 员工登录
      *
-     * @param employeeDTO
+     * @param employeeDTO employeeDTO
      * @return {@link Employee }
      */
     Employee login(EmployeeDTO employeeDTO);

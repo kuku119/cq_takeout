@@ -7,7 +7,7 @@ public interface UserService {
     /**
      * 微信登录
      *
-     * @param userLoginDTO
+     * @param userLoginDTO userLoginDTO
      * @return {@link User }
      */
     User wxLogin(UserLoginDTO userLoginDTO);

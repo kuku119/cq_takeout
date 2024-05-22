@@ -13,7 +13,7 @@ public interface OrderService {
     /**
      * 订单支付
      *
-     * @param ordersPaymentDTO
+     * @param ordersPaymentDTO ordersPaymentDTO
      * @return {@link OrderPaymentVO }
      * @throws Exception
      */
@@ -22,7 +22,7 @@ public interface OrderService {
     /**
      * 支付成功
      *
-     * @param outTradeNo
+     * @param outTradeNo outTradeNo
      */
     void paySuccess(String outTradeNo);
 
@@ -31,9 +31,9 @@ public interface OrderService {
     /**
      * 用户端订单分页查询
      *
-     * @param page
-     * @param pageSize
-     * @param status
+     * @param page page
+     * @param pageSize pageSize
+     * @param status status
      * @return {@link PageResult }
      */
     PageResult pageQuery4User(int page, int pageSize, Integer status);
@@ -41,21 +41,21 @@ public interface OrderService {
     /**
      * 用户取消订单
      *
-     * @param id
+     * @param id id
      */
     void userCancelById(Long id);
 
     /**
      * 再来一单
      *
-     * @param id
+     * @param id id
      */
     void repetition(Long id);
 
     /**
      * 按条件搜索订单
      *
-     * @param ordersPageQueryDTO
+     * @param ordersPageQueryDTO ordersPageQueryDTO
      * @return {@link PageResult }
      */
     PageResult conditionSearch(OrdersPageQueryDTO ordersPageQueryDTO);
@@ -74,14 +74,14 @@ public interface OrderService {
     /**
      * 接单
      *
-     * @param ordersConfirmDTO
+     * @param ordersConfirmDTO ordersConfirmDTO
      */
     void confirm(OrdersConfirmDTO ordersConfirmDTO);
 
     /**
      * 商家取消订单
      *
-     * @param ordersCancelDTO
+     * @param ordersCancelDTO ordersCancelDTO
      * @throws Exception
      */
     void cancel(OrdersCancelDTO ordersCancelDTO) throws Exception;

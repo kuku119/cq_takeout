@@ -11,8 +11,8 @@ public interface WorkspaceService {
     /**
      * 根据时间段统计营业额
      *
-     * @param begin
-     * @param end
+     * @param begin begin
+     * @param end end
      * @return {@link BusinessDataVO }
      */
     BusinessDataVO getBusinessData(LocalDate begin, LocalDate end);

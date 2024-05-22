@@ -1,13 +1,13 @@
 package com.kk119.cq_takeout.context;
 
-public class BasicContext {
+public class BaseContext {
     public static ThreadLocal<Long> threadLocal = new ThreadLocal<>();
 
-    public static void setCurrent(Long id) {
+    public static void setCurrentId(Long id) {
         threadLocal.set(id);
     }
 
-    public static Long getCurrent() {
+    public static Long getCurrentId() {
         return threadLocal.get();
     }
 

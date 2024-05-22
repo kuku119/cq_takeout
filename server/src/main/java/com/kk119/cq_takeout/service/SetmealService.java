@@ -12,14 +12,14 @@ public interface SetmealService {
     /**
      * 新增套餐，同时保存套餐与菜品的关系
      *
-     * @param setmealDTO
+     * @param setmealDTO setmealDTO
      */
     void saveWithDish(SetmealDTO setmealDTO);
 
     /**
      * 分页查询
      *
-     * @param setmealPageQueryDTO
+     * @param setmealPageQueryDTO setmealPageQueryDTO
      * @return {@link PageResult }
      */
     PageResult pageQuery(SetmealPageQueryDTO setmealPageQueryDTO);
@@ -27,14 +27,14 @@ public interface SetmealService {
     /**
      * 批量删除套餐
      *
-     * @param ids
+     * @param ids ids
      */
     void deleteBatch(List<Long> ids);
 
     /**
      * 动态条件查询套餐
      *
-     * @param setmeal
+     * @param setmeal setmeal
      * @return {@link List }<{@link SetmealDTO }>
      */
     List<SetmealDTO> list(Setmeal setmeal);
@@ -42,7 +42,7 @@ public interface SetmealService {
     /**
      * 根据编号查询菜品
      *
-     * @param id
+     * @param id id
      * @return {@link List }<{@link DishItemVO }>
      */
     List<DishItemVO> getDishItemById(Long id);
