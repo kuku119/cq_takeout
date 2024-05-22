@@ -4,10 +4,11 @@ import com.kk119.cq_takeout.entity.AddressBook;
 import com.kk119.cq_takeout.mapper.AddressBookMapper;
 import com.kk119.cq_takeout.service.AddressBookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-import java.util.Collections;
 import java.util.List;
 
+@Component
 public class AddressBookServiceImpl implements AddressBookService {
     @Autowired
     private AddressBookMapper addressBookMapper;
